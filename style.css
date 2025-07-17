@@ -6,7 +6,6 @@ body {
   color: #eee;
   margin: 0;
   padding: 10px;
-  position: relative;
   font-size: 16px;
 }
 
@@ -38,6 +37,7 @@ body {
   box-shadow: 3px 3px 10px rgba(0,0,0,0.7);
   max-width: 200px;
   flex-shrink: 0;
+  order: 2; /* Friends box on the right */
 }
 
 .friends-box h2 {
@@ -67,7 +67,6 @@ body {
   text-shadow: 0 0 5px #ff00ff;
   text-align: center;
 }
-
 
 .profile-box,
 .section {
@@ -149,7 +148,6 @@ marquee {
   font-weight: bold;
 }
 
-
 #star-container {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
@@ -190,12 +188,17 @@ marquee {
     align-items: center;
   }
 
-  .friends-box {
-    display: none;
-  }
-
   .main-content {
     width: 100%;
+  }
+
+  .friends-box {
+    position: relative;
+    top: auto;
+    order: 2;
+    width: 100%;
+    max-width: none;
+    margin-top: 20px;
   }
 
   .pfp {
