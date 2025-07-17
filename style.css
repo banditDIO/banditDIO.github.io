@@ -68,7 +68,7 @@ body {
   text-align: center;
 }
 
-/* Reuse existing styles */
+
 .profile-box,
 .section {
   width: 100%;
@@ -149,7 +149,7 @@ marquee {
   font-weight: bold;
 }
 
-/* stars background container */
+
 #star-container {
   position: fixed;
   top: 0; left: 0; width: 100%; height: 100%;
